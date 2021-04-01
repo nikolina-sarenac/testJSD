@@ -1,0 +1,33 @@
+
+SbagModel:
+    config=Config?
+    simple_types*=BaseType
+    entities+=Entity
+;
+
+Entity:
+    'entity' name=ID ':'
+    properties+=Property
+;
+
+Property:
+    name=ID ':' type=[Type] ';'
+;
+
+Type:
+    BaseType | Entity
+;
+
+BaseType:
+    'type' name=ID
+;
+
+Config:
+    'project' ':' project=ID
+    'group' ':' group=STRING
+    'description' ':' description=STRING
+;
+
+Comment:
+    /\/\/.*$/
+;
