@@ -36,8 +36,6 @@ jobs:
 
       - name: set up venv
         run: |
-          python -m venv ntp/venv
-          ./ntp/venv/Scripts/activate
           pip install -r requirements.txt
           pip install -e .
 
