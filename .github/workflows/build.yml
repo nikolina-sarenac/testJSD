@@ -43,5 +43,3 @@ jobs:
 
       - name: generate java code
         run: textX generate sbag/language/library.sbag --target java
-        with:
-          fail_ci_if_error: true
