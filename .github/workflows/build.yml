@@ -38,6 +38,4 @@ jobs:
         run: |
           pip install -r requirements.txt
           pip install -e .
-
-      - name: generate java code
-        run: textX generate sbag/language/library.sbag --target java
+          textX generate sbag/language/library.sbag --target java
