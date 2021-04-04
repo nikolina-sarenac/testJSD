@@ -49,4 +49,4 @@ jobs:
       - name: set up venv
         run: |
           pip install -e .
-          textX generate sbag/language/library.sbag --target java
+          ~/.local/bin/textX textX generate sbag/language/library.sbag --target java
