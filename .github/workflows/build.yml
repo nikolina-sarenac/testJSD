@@ -49,5 +49,5 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: generate 
         run: |
-          ls
           textx generate sbag/language/library.sbag --target java
+          textx generate sbag/language/library.sbag --target javascript
