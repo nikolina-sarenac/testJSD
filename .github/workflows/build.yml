@@ -49,4 +49,4 @@ jobs:
       - name: set up venv
         run: |
           pip install -e .
-          python -m textX generate sbag/language/library.sbag --target java
+          textX generate sbag/language/library.sbag --target java
