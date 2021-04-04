@@ -48,6 +48,5 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: set up venv
         run: |
-          pip install -r requirements.txt
           pip install -e .
           python -m textX generate sbag/language/library.sbag --target java
