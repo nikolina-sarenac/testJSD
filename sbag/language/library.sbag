@@ -1,0 +1,14 @@
+project: Biblioteka
+group: "uns.ac.rs"
+description: "Aplikacija koja omogucava rad bibliotekarima"
+
+entity Book:
+    title: string;
+    publishingYear: int;
+    genre: string;
+    author: Author;
+    year: int;
+
+entity Author:
+    firstName: string;
+    lastName: string;
