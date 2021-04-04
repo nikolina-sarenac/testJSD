@@ -41,5 +41,6 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install -e .
       - name: generate 
-        run: 
+        run: |
+          pip install textX
           textX generate sbag/language/library.sbag --target java
