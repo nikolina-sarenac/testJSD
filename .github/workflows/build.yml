@@ -48,5 +48,9 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: set up venv
         run: |
+          shell: bash -l {0}
           pip install -e .
+      - name: generate 
+        run: |
+          shell: bash -l {0}
           ~/.local/bin/textX textX generate sbag/language/library.sbag --target java
